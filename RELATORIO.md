@@ -1,6 +1,6 @@
 # Relatório — Simulação de escalonamento: FCFS × CFS
 
-Dupla 1: Lucas Mello e Rafael Santos.
+Dupla 1: Lucas Mello e Rafael Santos. No CFS, todos os pesos são 1024, salvo indicação.
 
 ## Experimento 1: conjunto comum
 

@@ -20,7 +20,7 @@ def main():
 
     if algoritmo == "FCFS":
         linha_do_tempo = simular_fcfs(processos)
-    else: 
+    else:
         linha_do_tempo = simular_cfs(processos)
 
     linha_do_tempo = unir_intervalos(linha_do_tempo)

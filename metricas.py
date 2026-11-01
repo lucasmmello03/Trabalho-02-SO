@@ -1,6 +1,6 @@
 
 def unir_intervalos(linha_do_tempo):
-    
+
     resultado = []
     for processo, inicio, fim in linha_do_tempo:
         anterior = resultado[-1] if resultado else None
@@ -19,8 +19,8 @@ def calcular_metricas(processos, linha_do_tempo):
 
         trechos = [t for t in linha_do_tempo if t["processo"] == p["id"]]
 
-        primeira_execucao = trechos[0]["inicio"]  
-        conclusao = trechos[-1]["fim"]             
+        primeira_execucao = trechos[0]["inicio"]
+        conclusao = trechos[-1]["fim"]
         turnaround = conclusao - p["chegada"]
 
         metricas.append({

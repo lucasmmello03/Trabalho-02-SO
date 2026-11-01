@@ -1,10 +1,11 @@
+TOLERANCIA = 1e-9
+
 
 def desempate_geral(candidatos):
     return min(candidatos, key=lambda p: (p["chegada"], p["id"]))
 
 
 def escolher_proximo(prontos):
-
     menor = min(p["vruntime"] for p in prontos)
     candidatos = [p for p in prontos if p["vruntime"] - menor <= TOLERANCIA]
 
@@ -15,31 +16,28 @@ def escolher_proximo(prontos):
     if nunca_executaram:
         return desempate_geral(nunca_executaram)
 
-    
     return min(candidatos, key=lambda p: p["ultima_execucao"])
 
 
 def simular_cfs(processos):
-
     pendentes = []
     for p in processos:
         pendentes.append({
             "id": p["id"],
             "chegada": p["chegada"],
             "peso": p["peso"],
-            "restante": p["cpu"],       
+            "restante": p["cpu"],
             "vruntime": 0.0,
-            "ultima_execucao": None,  
+            "ultima_execucao": None,
         })
     pendentes.sort(key=lambda p: (p["chegada"], p["id"]))
 
-    prontos = []         
-    referencia = 0.0     
+    prontos = []
+    referencia = 0.0
     tempo = 0
     linha_do_tempo = []
 
     while pendentes or prontos:
-
         chegando = [p for p in pendentes if p["chegada"] == tempo]
         if chegando:
             if prontos:
