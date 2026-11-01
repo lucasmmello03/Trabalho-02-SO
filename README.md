@@ -2,7 +2,7 @@
 
 Trabalho II de Sistemas Operacionais — IFRS.
 
-**Dupla 1:** Lucas Mello e _[nome do colega]_
+**Dupla 1:** Lucas Mello e Rafael Santos
 
 **Algoritmos implementados:** `FCFS` e `CFS` (versão didática do enunciado).
 

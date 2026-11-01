@@ -1,12 +1,6 @@
-"""Montagem da linha do tempo de saída e cálculo das métricas (seção 6)."""
-
 
 def unir_intervalos(linha_do_tempo):
-    """Une intervalos seguidos do mesmo processo.
-
-    Exemplo: P01 [0,1) + P01 [1,2)  ->  P01 [0,2)
-    Isso só muda a apresentação; a simulação já terminou.
-    """
+    
     resultado = []
     for processo, inicio, fim in linha_do_tempo:
         anterior = resultado[-1] if resultado else None
@@ -18,20 +12,15 @@ def unir_intervalos(linha_do_tempo):
 
 
 def calcular_metricas(processos, linha_do_tempo):
-    """Calcula as métricas de cada processo (ordenadas por ID) e as médias.
 
-    turnaround = conclusão - chegada
-    espera     = turnaround - tempo de CPU
-    resposta   = primeira execução - chegada
-    """
     metricas = []
 
     for p in sorted(processos, key=lambda p: p["id"]):
-        # Intervalos em que este processo executou.
+
         trechos = [t for t in linha_do_tempo if t["processo"] == p["id"]]
 
-        primeira_execucao = trechos[0]["inicio"]   # início do primeiro intervalo
-        conclusao = trechos[-1]["fim"]             # fim do último intervalo
+        primeira_execucao = trechos[0]["inicio"]  
+        conclusao = trechos[-1]["fim"]             
         turnaround = conclusao - p["chegada"]
 
         metricas.append({
