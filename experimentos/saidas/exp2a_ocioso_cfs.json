@@ -1,0 +1,66 @@
+{
+  "algoritmo": "CFS",
+  "linha_do_tempo": [
+    {
+      "processo": "OCIOSO",
+      "inicio": 0,
+      "fim": 1
+    },
+    {
+      "processo": "P01",
+      "inicio": 1,
+      "fim": 3
+    },
+    {
+      "processo": "OCIOSO",
+      "inicio": 3,
+      "fim": 6
+    },
+    {
+      "processo": "P02",
+      "inicio": 6,
+      "fim": 7
+    },
+    {
+      "processo": "P03",
+      "inicio": 7,
+      "fim": 8
+    },
+    {
+      "processo": "P02",
+      "inicio": 8,
+      "fim": 10
+    }
+  ],
+  "processos": [
+    {
+      "id": "P01",
+      "primeira_execucao": 1,
+      "conclusao": 3,
+      "turnaround": 2,
+      "espera": 0,
+      "resposta": 0
+    },
+    {
+      "id": "P02",
+      "primeira_execucao": 6,
+      "conclusao": 10,
+      "turnaround": 4,
+      "espera": 1,
+      "resposta": 0
+    },
+    {
+      "id": "P03",
+      "primeira_execucao": 7,
+      "conclusao": 8,
+      "turnaround": 1,
+      "espera": 0,
+      "resposta": 0
+    }
+  ],
+  "medias": {
+    "turnaround": 2.3333333333333335,
+    "espera": 0.3333333333333333,
+    "resposta": 0.0
+  }
+}

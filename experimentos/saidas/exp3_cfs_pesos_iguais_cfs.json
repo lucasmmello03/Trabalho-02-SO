@@ -1,0 +1,148 @@
+{
+  "algoritmo": "CFS",
+  "linha_do_tempo": [
+    {
+      "processo": "P01",
+      "inicio": 0,
+      "fim": 1
+    },
+    {
+      "processo": "P02",
+      "inicio": 1,
+      "fim": 2
+    },
+    {
+      "processo": "P01",
+      "inicio": 2,
+      "fim": 3
+    },
+    {
+      "processo": "P02",
+      "inicio": 3,
+      "fim": 4
+    },
+    {
+      "processo": "P01",
+      "inicio": 4,
+      "fim": 5
+    },
+    {
+      "processo": "P02",
+      "inicio": 5,
+      "fim": 6
+    },
+    {
+      "processo": "P01",
+      "inicio": 6,
+      "fim": 7
+    },
+    {
+      "processo": "P02",
+      "inicio": 7,
+      "fim": 8
+    },
+    {
+      "processo": "P01",
+      "inicio": 8,
+      "fim": 9
+    },
+    {
+      "processo": "P02",
+      "inicio": 9,
+      "fim": 10
+    },
+    {
+      "processo": "P01",
+      "inicio": 10,
+      "fim": 11
+    },
+    {
+      "processo": "P02",
+      "inicio": 11,
+      "fim": 12
+    },
+    {
+      "processo": "P01",
+      "inicio": 12,
+      "fim": 13
+    },
+    {
+      "processo": "P02",
+      "inicio": 13,
+      "fim": 14
+    },
+    {
+      "processo": "P01",
+      "inicio": 14,
+      "fim": 15
+    },
+    {
+      "processo": "P02",
+      "inicio": 15,
+      "fim": 16
+    },
+    {
+      "processo": "P01",
+      "inicio": 16,
+      "fim": 17
+    },
+    {
+      "processo": "P02",
+      "inicio": 17,
+      "fim": 18
+    },
+    {
+      "processo": "P01",
+      "inicio": 18,
+      "fim": 19
+    },
+    {
+      "processo": "P02",
+      "inicio": 19,
+      "fim": 20
+    },
+    {
+      "processo": "P01",
+      "inicio": 20,
+      "fim": 21
+    },
+    {
+      "processo": "P02",
+      "inicio": 21,
+      "fim": 22
+    },
+    {
+      "processo": "P01",
+      "inicio": 22,
+      "fim": 23
+    },
+    {
+      "processo": "P02",
+      "inicio": 23,
+      "fim": 24
+    }
+  ],
+  "processos": [
+    {
+      "id": "P01",
+      "primeira_execucao": 0,
+      "conclusao": 23,
+      "turnaround": 23,
+      "espera": 11,
+      "resposta": 0
+    },
+    {
+      "id": "P02",
+      "primeira_execucao": 1,
+      "conclusao": 24,
+      "turnaround": 24,
+      "espera": 12,
+      "resposta": 1
+    }
+  ],
+  "medias": {
+    "turnaround": 23.5,
+    "espera": 11.5,
+    "resposta": 0.5
+  }
+}

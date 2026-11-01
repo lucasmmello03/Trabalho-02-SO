@@ -1,0 +1,64 @@
+{
+  "algoritmo": "FCFS",
+  "linha_do_tempo": [
+    {
+      "processo": "P01",
+      "inicio": 0,
+      "fim": 8
+    },
+    {
+      "processo": "P02",
+      "inicio": 8,
+      "fim": 12
+    },
+    {
+      "processo": "P03",
+      "inicio": 12,
+      "fim": 14
+    },
+    {
+      "processo": "P04",
+      "inicio": 14,
+      "fim": 15
+    }
+  ],
+  "processos": [
+    {
+      "id": "P01",
+      "primeira_execucao": 0,
+      "conclusao": 8,
+      "turnaround": 8,
+      "espera": 0,
+      "resposta": 0
+    },
+    {
+      "id": "P02",
+      "primeira_execucao": 8,
+      "conclusao": 12,
+      "turnaround": 11,
+      "espera": 7,
+      "resposta": 7
+    },
+    {
+      "id": "P03",
+      "primeira_execucao": 12,
+      "conclusao": 14,
+      "turnaround": 12,
+      "espera": 10,
+      "resposta": 10
+    },
+    {
+      "id": "P04",
+      "primeira_execucao": 14,
+      "conclusao": 15,
+      "turnaround": 11,
+      "espera": 10,
+      "resposta": 10
+    }
+  ],
+  "medias": {
+    "turnaround": 10.5,
+    "espera": 6.75,
+    "resposta": 6.75
+  }
+}
